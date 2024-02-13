@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import img1 from "../src/images/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai.jpg"
+import img2 from "../src/images/summer-daisy-beauty-petal-close-up-purple-outdoors-generative-ai.jpg"
+import img3 from "../src/images/view-old-tree-lake-with-snow-covered-mountains-cloudy-day.jpg"
+import img4 from "../src/images/lance-asper-N9Pf2J656aQ-unsplash.jpg"
+import img5 from "../src/images/devon-janse-van-rensburg-yoqHLUayUTg-unsplash.jpg"
+import Slider from "../src/crousel/Slider"
 import './App.css';
+
+const images = [img1,img2,img3,img4,img5]
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{maxWidth:"1200px", width:"100%", aspectRatio:"10/6" , margin: "0 auto"}}>
+      <Slider imgProp={images}/>
     </div>
   );
 }
